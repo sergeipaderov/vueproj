@@ -3,6 +3,7 @@
         <img src="../assets/img/darth_black.svg" alt="logo">        
         <div class="output">
             <div class="notMessage">
+                <h2>404</h2>
                 <h3>Page not found</h3>
             </div>
             <div class="notLink">
@@ -35,6 +36,14 @@
         .notMessage
             display inline-block
 
+            h2
+                font-size 2.2em
+                font-weight 800
+                color darkred
+                margin-top .8em
+                letter-spacing: 1.6px
+                text-transform uppercase
+
             h3
                 font-size 2em
                 font-weight 600
@@ -47,7 +56,7 @@
             left 0
 
             a
-                color #000000
+                color darkblue
                 text-decoration none
                 font-family Geneva, Arial, Helvetica, sans-serif
                 font-size 2em
