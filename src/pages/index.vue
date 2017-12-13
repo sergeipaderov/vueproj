@@ -2,7 +2,7 @@
   <div class="index">
     <img src="../assets/img/darth_black.svg" alt="logo">
     <div class="input">
-      <router-link tag="a" to="/vuejs"><h3>Welcome</h3></router-link>
+      <router-link tag="a" to="/vuejs"><h3>ENTER</h3></router-link>
     </div>
   </div>
 </template>

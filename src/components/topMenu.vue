@@ -1,8 +1,8 @@
 <template>
     <div class="topMenu">
-        <did class="logo">
+        <div class="logo">
             <img src="../assets/img/darth_white.svg" alt="logo">
-        </did>
+        </div>
         <div class="menu">
             <router-link tag="a" to="/vuejs">VueJS</router-link>         
             <router-link tag="a" to="/cpp">C++</router-link>
