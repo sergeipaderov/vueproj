@@ -1,0 +1,29 @@
+@import 'system'
+
+.topMenu
+    position fixed
+    z-index 100
+    top 0
+    left 0
+    right 0
+    background-color #fff
+    display grid
+    grid-template-columns 80px 1fr 100px
+    grid-template-row 70px
+    align-items center
+    justify-content start
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+    img
+        width 60px
+        height 60px
+        vertical-align middle
+
+    a
+        text-decoration none
+        color #000000
+        margin-left 20px
+
+    a:hover
+        color default_color
+        cursor pointer
