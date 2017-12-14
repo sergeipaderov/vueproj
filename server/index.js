@@ -4,6 +4,8 @@ import path from 'path'
 import Debug from 'debug'
 import devOptions from './controllers/config/devOptions'
 
+import auth from './routes/auth'
+
 const debug = Debug('server:app')
 const port = process.env.PORT || 5000
 const app = express()
@@ -13,6 +15,10 @@ app.use(bodyParser.json());
 app.use('/dist', express.static('dist'));
 
 devOptions(app)
+
+// routes
+
+app.use('/api/auth', auth)
 
 app.get('/*', (req, res) =>{
   res.sendFile(path.join(__dirname, '../index.html'))

@@ -14,6 +14,23 @@
 </template>
 
 <script>
+    export default {
+        data() {
+            return {
+                kuShowTwo : false,
+                kuShowLast: false
+            }
+        },
+        methods: {
+            showKu() {
+                if (!this.kuShowTwo) {
+                    this.kuShowTwo = true
+                } else {
+                    this.kuShowLast = true
+                }
+            }
+        }
+    }
   
 </script>
 
