@@ -1,9 +1,9 @@
 <template>
   <div>
-    <notifications group="auth-notification"
+    <!--<notifications group="auth-notification"
                    position="bottom right"
                    :speed="500">
-    </notifications>
+    </notifications>-->
     <div class="login-wrap">
       <input id="tabInput" type="radio" name="tab" class="sign-in" checked><label for="tabInput" class="tab" @click="showForm(1)">Enter</label>
       <input id="tabRegistration" type="radio" name="tab" class="sign-up"><label for="tabRegistration" class="tab" @click="showForm(2)">Sign Up</label>
@@ -80,7 +80,8 @@ export default {
         default:
           break;
       }
-    },
+    }
+    /*,
     submit(key) {
       if (valid(this.model, key).isValid) {
         this.auth(this.model);
@@ -94,7 +95,7 @@ export default {
           this.$notify({ group, title, text, type });
         }
       }
-    }
+    }*/
   }
 };
 </script>

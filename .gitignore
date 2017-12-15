@@ -1,10 +1,22 @@
 .DS_Store
 node_modules/
-dist/
+.dist
 npm-debug.log
 yarn-error.log
-
-# Editor directories and files
+server/controllers/config/heroku.dev.js
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+lib-cov
+coverage
+.nyc_output
+.loc-wscript
+build/Release
+.npm
 .idea
 *.suo
 *.ntvs*

@@ -2,7 +2,8 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import path from 'path'
 import Debug from 'debug'
-import devOptions from './controllers/config/devOptions'
+import devServOpt from './controllers/config/dev.serv.opt'
+import morgan from 'morgan'
 
 import auth from './routes/auth'
 
@@ -13,8 +14,9 @@ const app = express()
 
 app.use(bodyParser.json());
 app.use('/dist', express.static('dist'));
+app.use(morgan('dev'))
 
-devOptions(app)
+devServOpt(app)
 
 // routes
 
